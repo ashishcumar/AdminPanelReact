@@ -1,0 +1,189 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #4E657A;
+}
+
+.AccountPagecontainer{
+    width: 80%;
+    /* border: 5px solid gold; */
+    margin: auto;
+    padding: 30px;
+}
+
+.AccountListDiv{
+   width: 95%;
+   /* border: 2px solid rebeccapurple; */
+   margin: 30px auto;
+   padding: 30px;
+   background-color: #435C70;
+   color: white;
+}
+
+.AccountListDiv p{
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+.AccountListDiv select{
+    width: 95%;
+    height: 45px;
+    margin: 5px 0;
+    padding: 0px 10px;
+    font-size: 16px;
+    color: #ACC6DE;
+    background-color: #50657B;
+    border: none;
+    outline: none;
+}
+
+.Avatar_SettingsDiv{
+    /* border: 3px solid aqua; */
+    display:flex;
+    width: 95%;
+    margin: auto;
+    background-color: #4E657A;
+}
+
+.imgContainer{
+    /* border: 3px solid hotpink; */
+    width: 35%;
+    margin: 0px 20px 0 0;
+    padding: 20px;
+    background-color: #435C70;
+    color: white;
+}
+
+.imgContainer h2,.settingContainer h2{
+    margin: 10px 0;
+}
+
+.img{
+    width: 95%;
+    height: 70%;
+    margin:10px auto;
+    overflow: hidden;
+}
+
+
+.settingContainer{
+    width: 65%;
+    /* border: 3px solid red; */
+    margin: 0px 0px 0 20px;
+    padding: 20px 35px;
+    background-color: #435C70;
+    color: white;
+}
+
+.inputContainer{
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 20px 0 0 0;
+    /* border: 3px solid slateblue; */
+}
+
+.inputContainer input{
+    height: 45px;
+    margin: 5px 0;
+    width: 280px;
+    padding: 5px 10px ;
+    font-size: 17px;
+    border: none;
+    outline: none;
+    background-color: #50657B;
+    color: white;
+}
+
+.inputContainer p{
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+.updateProfileBtn,.deleteBtn,.imgContainer button{
+    width: 280px;
+    height: 45px;
+    display: block;
+    align-items: flex-end;
+    margin: 40px 0 0 0;
+    font-weight: bold;
+    font-size: 16px;
+    border: 2px solid #F5A623;
+    background-color: #F5A623;
+    color: white;
+}
+
+.deleteBtn{
+    width: 100%;
+    margin: 20px 0 0 0;
+}
+
+
+.updateProfileBtn:hover,.deleteBtn:hover,.imgContainer button:hover{
+    border: 2px solid #F5A623;
+    background-color:#435C70 ;
+    color: #F5A623;
+}
+
+
+.imgContainer button{
+    width: 95%;
+    height: 45px;
+    margin: 10px 0 0 0;
+}
+
+@media screen and (max-width:1000px) {
+    
+    .Avatar_SettingsDiv{
+        display: block;
+    }
+    
+    .imgContainer,.settingContainer{
+        width: 80%;
+        margin:40px auto;
+    }
+
+    .settingContainer h2{
+        margin:0 20px;
+    }
+
+
+    .inputContainer input,.inputContainer p{
+        width: 90%;
+        margin:10px 20px;
+    }
+
+    .inputBox{
+        width: 100%;
+    }
+    .updateProfileBtn,.deleteBtn{
+        width: 90%;
+        margin:10px 20px;
+
+    }
+
+}
+
+@media screen and (max-width:800px) {
+    .Avatar_SettingsDiv{
+        width: 100%;
+    }
+    .imgContainer,.settingContainer{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .settingContainer{
+        padding: 20px 0;
+    }
+    .AccountPagecontainer{
+        width: 90%;
+        padding: 10px 0;
+    }
+}

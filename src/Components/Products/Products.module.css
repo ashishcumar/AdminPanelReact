@@ -1,0 +1,254 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #4e657a;
+}
+
+.Container {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  width: 85%;
+  margin: 70px auto;
+  color: white;
+}
+
+.productCategories {
+  margin: 0px 0px 0px 50px;
+  background-color: #435c70;
+}
+
+.addNewProduct {
+  overflow: hidden;
+  background-color: #435c70;
+}
+
+.tableContainer {
+  height: 450px;
+  width: 90%;
+  overflow-y: scroll;
+  margin: 50px auto;
+}
+
+table {
+  width: 100%;
+}
+
+th {
+  width: fit-content;
+  font-size: 16px;
+  padding: 20px 10px;
+  background-color: #486177;
+}
+
+td {
+  width: fit-content;
+  text-align: center;
+  padding: 20px 10px;
+  font-size: 16px;
+  background-color: #50697f;
+}
+
+#sideIcon {
+  font-size: 25px;
+  color: white;
+}
+
+.link {
+  text-decoration: none;
+}
+
+#sideIcon:hover {
+  color: #6d8295;
+}
+
+.addNewProduct button,
+.productCategories button {
+  width: 90%;
+  margin: auto;
+  display: block;
+  padding: 10px;
+  font-size: 18px;
+  font-weight: bold;
+  border: 2px solid #f5a623;
+  background-color: #f5a623;
+  color: white;
+}
+
+.addNewProduct button:hover,
+.productCategories button:hover {
+  border: 2px solid #f5a623;
+  background-color: #435c70;
+  color: #f5a623;
+}
+
+.productCategories button {
+  width: 100%;
+  margin: 25px 0;
+}
+
+.addNewProduct button:last-child {
+  margin: 0px auto 30px auto;
+}
+
+#sideIcon span,
+#sideIcon label {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  width: 40px;
+  margin: auto;
+  border-radius: 50%;
+  background-color: #394e64;
+}
+
+#inputBox {
+  width: 30px;
+  height: 30px;
+  opacity: 0.02;
+  border-radius: 50%;
+}
+
+#inputBox[type="checkbox"]:checked {
+  accent-color: #394e64;
+  opacity: 1;
+}
+
+.productCategories {
+  padding: 30px;
+  position: relative;
+}
+
+.productCategoriesList {
+  height: 250px;
+  overflow-y: scroll;
+  background-color: #435c70;
+}
+
+.productCategories h2 {
+  margin: 20px 0;
+}
+
+.productCategories p {
+  margin: 12px 6px;
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  background-color: #50697f;
+}
+
+.productCategories span {
+  height: 40px;
+  width: 40px;
+  /* border: 1px solid black; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background-color: #394e64;
+}
+
+.CategListDelete {
+  font-size: 25px;
+}
+
+.tableTr:hover,
+.productCategoriesList p:hover {
+  opacity: 0.4;
+}
+
+.categPopup {
+  height: 250px;
+  width: 80%;
+  color: white;
+  margin: 20px auto;
+  position: absolute;
+  top: 83px;
+  right: 45px;
+  background-color: #3d5167;
+  padding: 20px;
+  box-shadow: 0px 0px 10px inset black;
+}
+
+.categPopup h2 {
+  background-color: transparent;
+  font-size: 26px;
+}
+
+.categPopup input {
+  width: 100%;
+  display: block;
+  margin: auto;
+  height: 45px;
+  padding: 5px 10px;
+  font-size: 18px;
+  border: none;
+  outline: none;
+}
+
+.categPopup input:focus {
+  border: 2px solid #768798;
+}
+
+.addCatBtn {
+  float: right;
+  font-size: 28px;
+  height: 35px;
+  width: 35px;
+  padding: 3px;
+  border: 1px solid #f5a623;
+  margin: 20px 10px 0 10px;
+  background-color: #3d5167;
+  font-weight: lighter;
+  transition: all ease-in;
+}
+.addCatBtn:hover {
+  background-color: #f5a623;
+  color: white;
+  border: none;
+}
+
+@media screen and (max-width: 800px) {
+  .Container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .productCategories {
+    width: 70%;
+    margin: 50px 0;
+  }
+  .categPopup {
+    width: 82%;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .productCategories {
+    width: 95%;
+    margin: 50px 0;
+  }
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #394f62;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #6d8da6;
+  border-radius: 5px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #91a4b3;
+}

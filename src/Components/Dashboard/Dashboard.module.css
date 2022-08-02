@@ -1,0 +1,256 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #4e657a;
+  color: white;
+}
+
+.LasteshHit_Perf_Container {
+  width: 85%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.welcomAdmin {
+  margin: 50px 0 20px 220px;
+}
+
+.orderListDiv {
+  width: 85%;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #435c70;
+}
+
+.orderListDiv h2 {
+  margin: 20px 0;
+}
+
+.latestHitChart h2,
+.perFormanceChart h2,
+.storageChart h2,
+.notificationList h2 {
+  margin: 20px;
+}
+
+.latestHitChart,
+.perFormanceChart {
+  width: 40%;
+  height: 350px;
+  padding: 30px;
+  margin: 20px;
+  background-color: #435c70;
+  position: relative;
+}
+
+.storageChart,
+.notificationList {
+  width: 40%;
+  height: 450px;
+  padding: 20px;
+  margin: 20px;
+  background-color: #435c70;
+}
+
+.Chart {
+  height: 80%;
+}
+
+.notifContainer {
+  height: 80%;
+  overflow-y: scroll;
+  margin: 15px 0;
+}
+
+.notifBox {
+  width: 95%;
+  height: 100px;
+  margin: 10px auto;
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  background-color: #4e657a;
+}
+
+.imgContainer {
+  height: 55px;
+  width: 70px;
+  margin: 8px;
+  border-radius: 50%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.notifBox img {
+  height: 100%;
+  width: 100%;
+}
+
+.tableContainer {
+  height: 400px;
+  overflow: scroll;
+}
+
+table {
+  width: 100%;
+}
+
+tr {
+  width: 100%;
+  background-color: #50697f;
+}
+
+th {
+  padding: 20px 15px;
+  background-color: #486177;
+}
+
+td {
+  padding: 15px 15px;
+}
+
+.statusDot {
+  color: white;
+  font-size: 25px;
+  text-shadow: 0px 0px 10px white;
+}
+
+.timeSpan {
+  color: #bdcbd8;
+  margin-top: 15px;
+}
+
+.highlightNotif {
+  color: #f5a623;
+}
+
+b {
+  font-size: 17px;
+}
+
+@media screen and (max-width: 900px) {
+  .LasteshHit_Perf_Container {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .LasteshHit_Perf_Container {
+    display: flex;
+    flex-direction: column;
+  }
+  .latestHitChart,
+  .perFormanceChart,
+  .storageChart,
+  .notificationList {
+    width: 80%;
+    height: 350px;
+  }
+  .storageChart {
+    height: 450px;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .LasteshHit_Perf_Container {
+    display: flex;
+    flex-direction: column;
+  }
+  .latestHitChart,
+  .perFormanceChart,
+  .storageChart,
+  .notificationList {
+    width: 80%;
+    height: 300px;
+  }
+  .latestHitChart,
+  .perFormanceChart {
+    height: 250px;
+  }
+  .welcomAdmin {
+    margin: 20px 0 20px 50px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .LasteshHit_Perf_Container {
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+  }
+  .latestHitChart,
+  .perFormanceChart{
+    width: 90%;
+    height: 250px;
+  }
+
+  th {
+    padding: 10px 10px;
+  }
+
+  td {
+    padding: 10px 10px;
+  }
+  .storageChart,
+  .notificationList{
+    width: 90%;
+    height: 300px;
+  }
+  
+  .latestHitChart h2,
+  .perFormanceChart h2,
+  .storageChart h2,
+  .notificationList h2 {
+   font-size: 16px;
+   margin: 10px;
+   }
+   .notifBox {
+    display: grid;
+    grid-template-columns: 3fr 7fr;
+    height: 120px;
+   }
+
+  .notifBox , .notifBox b{
+    font-size: 14px;
+  }
+  .Dashboard_timeSpan{
+    margin-top: 0px;
+  }
+  .imgContainer {
+    height: 50px;
+    width: 50px;
+    margin: 8px;
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #394f62;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #6d8da6;
+  border-radius: 5px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #91a4b3;
+}

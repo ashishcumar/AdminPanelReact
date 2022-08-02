@@ -1,0 +1,126 @@
+.LoginDiv {
+  background-color: #4e657a;
+  height: 83vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.LoginForm {
+  width: 450px;
+  padding: 30px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  background-color: #435c70;
+}
+
+.LoginForm h2 {
+  margin: 15px 0;
+}
+
+.LoginForm p {
+  font-size: 20px;
+  margin: 15px 0;
+}
+
+.LoginForm input {
+  height: 45px;
+  border-radius: 2px;
+  margin: 5px 0;
+  border: 1px solid #ced4da;
+  padding: 5px 10px;
+  outline: none;
+  background-color: #54657d;
+  color: white;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.LoginForm button,
+.link {
+  height: 45px;
+  margin: 15px 0;
+  border-radius: 2px;
+  border: none;
+  outline: none;
+  font-size: 18px;
+  background-color: #f5a623;
+  color: white;
+  font-weight: bold;
+}
+
+.popDiv {
+  text-align: center;
+  height: 210px;
+  border-radius: 20px;
+  width: 88%;
+  position: absolute;
+  background-color: #4e657a;
+  color: black;
+  padding: 10px;
+  top: 20%;
+  left: 25px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  color: white;
+  margin: auto;
+  box-shadow: 0px 0px 10px #f5a623;
+}
+
+.popDiv h2 {
+  padding: 0;
+  margin: 5px 0;
+}
+
+.popDiv p {
+  padding: 0;
+  margin: 0;
+}
+.sentIcon {
+  color: #f5a623;
+  font-size: 38px;
+}
+
+.closeIcon {
+  color: white;
+  font-size: 20px;
+  margin: 0 5px;
+}
+
+.closetbtn {
+  width: 40%;
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.closetbtn:hover {
+  background-color: white;
+  color: #4e657a;
+}
+.closetbtn:hover .closeIcon {
+  color: #4e657a;
+}
+
+@media screen and (max-width: 500px) {
+  .LoginForm {
+    width: 300px;
+    padding: 30px;
+  }
+  .LoginForm h2,
+  .LoginForm p,
+  .LoginForm button {
+    margin: 10px 0;
+  }
+  .LoginForm button,
+  .LoginForm input {
+    height: 35px;
+  }
+}

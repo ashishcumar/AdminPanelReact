@@ -1,0 +1,14 @@
+.footDiv{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 60px;
+    font-size: 18px;
+    background-color: #567086;
+    color: white;
+}
+
+.footDiv b {
+    margin: 0 5px;
+}

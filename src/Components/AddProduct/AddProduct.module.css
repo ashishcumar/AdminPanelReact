@@ -1,0 +1,227 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: #4E657A;
+}
+
+
+
+.AddCardBox{
+    display:flex;
+    justify-content: center;
+    margin: 50px auto 0 auto;
+    width: 55%;
+    background-color: #435C70;
+}
+
+.AddCardLeft,.AddCardRight{
+    width: 50%;
+    padding: 30px;
+    color: white;
+}
+
+.AddCardLeft h2{
+    margin: 15px 0;
+}
+
+.AddCardLeft p ,.AddCardRight p{
+    font-size: 20px;
+    margin: 15px 0;
+}
+
+.AddCardLeft input{
+    height: 50px;
+    width: 350px;
+    background-color: #54657D;
+    border: none;
+    outline: none;
+    padding: 5px 15px;
+    margin: 5px 0 10px 0;
+    color: white;
+}
+
+.AddCardLeft textarea{
+    height: 120px;
+    width: 350px;
+    background-color: #54657D;
+    border: none;
+    outline: none;
+    padding: 5px 15px;
+    margin: 5px 0 10px 0;
+    color: white;
+
+}
+
+.AddCardLeft select{
+    height: 45px;
+    width: 350px;
+    background-color: #54657D;
+    border: none;
+    outline: none;
+    padding: 5px 15px;
+    font-size: 17px;
+    margin: 5px 0 15px 0;
+    color: #ACC6DE;
+    
+}
+
+.link{
+    text-decoration: none;
+}
+
+.stock_Expire{
+    display:flex;
+    align-items: center;
+}
+
+.stock_Expire input{
+    width: 170px;
+    margin: 0px 10px 0 0;
+    font-size: 15px;
+    overflow: hidden;
+    color: white;
+}
+
+
+
+.AddCardRight_uploadDiv{
+    height: 200px;
+    width: 100%;
+    margin: 50px 0 0 0 ;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #AAAAAA;
+}
+
+.AddCardRight_uploadDiv span{
+    height: 70px;
+    width: 70px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: #455C71;
+}
+
+.uploadIcon{
+    font-size: 40px;
+}
+
+.AddCardRight button{
+    width: 100%;
+    height: 45px;
+    font-size: 18px;
+    margin: 50px auto;
+    display: block;
+    padding: 10px;
+    font-weight: bold;
+    border: 2px solid #F5A623;
+    background-color: #F5A623;
+    color: white;
+}
+
+.AddCardRight button:hover,.addBtn:hover{
+    border: 2px solid #F5A623;
+    background-color:#435C70 ;
+    color: #F5A623;
+}
+
+.addBtnDiv{
+    margin:0 auto 50px auto; 
+    width: 55%;
+    background-color: #435C70;
+    height: 90px;
+}
+
+.addBtn{
+    width: 92%;
+    display: block;
+    height: 45px;
+    margin:0 auto 30px auto;
+    font-size: 18px;
+    padding: 10px;
+    font-weight: bold;
+    border: 2px solid #F5A623;
+    background-color: #F5A623;
+    color: white;
+}
+
+
+@media screen and (max-width:1000px) {
+    .AddCardBox{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .AddCardRight{
+        width: 100%;
+        margin: 0;
+    }
+
+    .AddCardRight_uploadDiv{
+        margin: 0;
+    }
+    .AddCardRight button{
+        margin: 0;
+    }
+    
+}
+
+@media screen and (max-width:700px) {
+    .AddCardBox,.addBtnDiv{
+        display: flex;
+        flex-direction: column;
+        width: 70%;
+    }
+    .addBtnDiv{
+        height: 70px;
+    }
+    .AddCardRight button{
+        margin: 0;
+    }
+}
+
+@media screen and (max-width:550px) {
+    .AddCardBox,.addBtnDiv{
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+    }    
+    .AddCardRight button{
+        margin: 0;
+    }
+}
+
+@media screen and (max-width:450px) {
+    .AddCardBox,.addBtnDiv{
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+    }
+    .AddCardLeft input{
+        width: 280px;
+        margin: 0px;
+    }
+    .stock_Expire input{
+        width: 135px;
+        margin-right: 8px;
+    }
+    .AddCardLeft textarea{
+        height: 100px;
+        width: 280px;
+        margin: 5px 0 0p 0;
+    }
+    
+    .AddCardLeft select{
+        height: 45px;
+        width: 280px;
+        margin: 5px 0 0px 0;
+    }
+    .AddCardRight button{
+        margin: 0;
+    }
+}

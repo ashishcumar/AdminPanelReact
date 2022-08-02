@@ -1,0 +1,173 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+nav {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: #567086;
+  color: white;
+  font-weight: bold;
+}
+
+.link {
+  color: white;
+  text-decoration: none;
+}
+
+.link:hover {
+  color: #f5a623;
+}
+
+.nav_Left {
+  font-size: calc(22px + 0.5vw);
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.nav_Right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav_CenterIcon {
+  font-size: 25px;
+}
+
+.nav_RightDiv {
+  text-align: center;
+  color: white;
+  height: 100px;
+  width: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.productColor {
+  background-color: #f5a623;
+  color: white;
+  text-align: center;
+  color: white;
+  height: 100px;
+  width: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#changeColor {
+  background-color: #f5a623;
+  color: white;
+}
+
+.nav_RightDiv:hover {
+  color: #f5a623;
+}
+
+.nav_RightDiv p {
+  font-size: 18px;
+}
+
+.nav_RightDivSc {
+  display: none;
+}
+
+.nav_RightDivtoggelMenu {
+  position: absolute;
+  right: 0px;
+  top: 35px;
+  background-color: #567086;
+  width: 180px;
+  color: white;
+  height: 160px;
+  border-radius: 15px;
+  z-index: 11;
+}
+
+.nav_RightDivtoggelMenu p {
+  display: flex;
+  padding: 8px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  outline: none;
+  font-size: 18px;
+}
+
+.nav_RightDivtoggelMenu p:hover {
+  color: #f5a623;
+}
+
+.nav_RightDivtoggelMenu p:first-child {
+  background-color: #f5a623;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.nav_RightDivtoggelMenu p:first-child:hover {
+  color: white;
+}
+
+.nav_toggelMenuIcon {
+  margin: 0 5px;
+}
+
+.nav_cornerDiv {
+  font-size: 17px;
+}
+
+#dashColor {
+  background: #f5a623;
+  color: white;
+}
+
+@media screen and (max-width: 800px) {
+  .nav_Right {
+    display: none;
+  }
+  .nav_RightDivSc {
+    display: block;
+    font-size: 20px;
+    padding: 3px 8px;
+    text-align: center;
+    border: 1px solid #9eaebb;
+    box-shadow: 0px 0px 5px #9eaebb;
+    position: relative;
+  }
+
+  .nav_RightDivSc:hover {
+    border: 1px solid #f5a623;
+    color: #f5a623;
+  }
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2.5vw 3vw;
+  }
+  .nav_cornerDiv {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .nav_RightDivtoggelMenu p {
+    padding: 5px;
+    font-size: 15px;
+  }
+
+  .nav_RightDivtoggelMenu {
+    width: 130px;
+    height: 130px;
+  }
+}
